@@ -7,7 +7,8 @@ RUN DEBIAN_FRONTEND=nointeractive apt install -y --no-install-recommends \
     texlive-latex-extra \
     texlive-xetex \
     texlive-fonts-extra \
-    texlive-fonts-recommended 
+    texlive-fonts-recommended \
+    texlive-lang-greek
 
 RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula \
     select true | debconf-set-selections && apt install -y msttcorefonts
